@@ -34,6 +34,7 @@ jobs:
         run: npm run build
         env:
           NODE_ENV: production
+          CESIUM_ION_TOKEN: ${{ secrets.CESIUM_ION_TOKEN }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
